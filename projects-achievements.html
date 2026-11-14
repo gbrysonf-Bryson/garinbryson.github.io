@@ -5,16 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="The interactive resume of Garin Bryson, a Media Arts and Sciences student."
+      content="Explore Garin Bryson's projects in game development, graphic design, and web design, along with academic achievements."
     />
-    <title>Garin Bryson | Interactive Resume</title>
-    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <title>Garin Bryson | Projects &amp; Achievements</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    <!-- Site Header -->
     <header class="site-header">
       <div class="brand">
         <span class="brand-mark" aria-hidden="true">GB</span>
@@ -29,17 +28,10 @@
       </div>
     </header>
 
-    <!-- Main Navigation -->
     <nav class="site-nav" aria-label="Main navigation">
       <ul class="nav-list">
         <li>
-          <a
-            class="nav-link current-page"
-            href="index.html"
-            aria-current="page"
-          >
-            Home
-          </a>
+          <a class="nav-link" href="index.html">Home</a>
         </li>
         <li>
           <a class="nav-link" href="experience.html">Experience</a>
@@ -50,7 +42,11 @@
           </a>
         </li>
         <li>
-          <a class="nav-link" href="projects-achievements.html">
+          <a
+            class="nav-link current-page"
+            href="projects-achievements.html"
+            aria-current="page"
+          >
             Projects &amp; Achievements
           </a>
         </li>
@@ -60,91 +56,127 @@
       </ul>
     </nav>
 
-    <!-- Main Content -->
     <main id="main-content">
-      <!-- Homepage Hero -->
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-content">
-          <p class="hero-label">Interactive Resume</p>
-          <h2 id="hero-title">Welcome — I’m Garin.</h2>
+          <p class="hero-label">Portfolio</p>
+          <h2 id="hero-title">Projects &amp; Achievements</h2>
           <p class="hero-lead">
-            I’m a Media Arts and Sciences student who enjoys working across
-            creative technology, design, and hands-on projects.
-          </p>
-          <p>
-            This website brings together my education, work experience, skills,
-            projects, and professional achievements in one organized place.
+            Here are a few class projects that show what I’ve learned about game
+            development, design, and building websites.
           </p>
         </div>
       </section>
 
-      <!-- Homepage Background Preview -->
-      <section class="background-preview" aria-labelledby="background-title">
+      <section class="background-preview" aria-labelledby="projects-title">
         <div class="section-heading">
-          <p class="section-label">My Background</p>
-          <h2 id="background-title">Explore My Background</h2>
-          <p class="section-introduction">
-            Choose a section below to learn more about my experience, education,
-            skills, projects, and achievements.
-          </p>
+          <h2 id="projects-title">Selected Projects</h2>
         </div>
-        <div class="card-grid">
+
+        <div class="card-grid project-grid">
           <article class="preview-card">
-            <h3>Experience</h3>
+            <h3>Doomfall: Invader Rains</h3>
             <p>
-              Review the positions, responsibilities, and practical skills I
-              have developed through my work experience.
+              I built this 2D arcade defense game in GameMaker for Game
+              Development I. The goal is to defend a domed city against waves of
+              asteroids.
             </p>
-            <a class="card-link" href="experience.html">
-              View Experience
-              <span aria-hidden="true">&rarr;</span>
+            <details>
+              <summary class="card-link">See what I built for Doomfall</summary>
+              <ul>
+                <li>Asteroid waves and level progression</li>
+                <li>On-screen indicators for shield health and score</li>
+                <li>Sprite design and playtesting</li>
+              </ul>
+            </details>
+          </article>
+
+          <article class="preview-card">
+            <h3>Endstar Team Game</h3>
+            <p>
+              I designed and built a level for our team game in AME 394. I
+              focused on how players move through the level and what gives them
+              a reason to explore.
+            </p>
+            <details>
+              <summary class="card-link">See what I contributed</summary>
+              <ul>
+                <li>
+                  Helped with layouts and gave feedback on three other team
+                  levels.
+                </li>
+                <li>
+                  Checked a prop’s scale and materials in Unity and brought it
+                  into the game using the Endstar Unity SDK.
+                </li>
+                <li>
+                  Playtested levels and helped plan how they fit into the story.
+                </li>
+              </ul>
+            </details>
+            <a class="card-link" href="#endstar-credential">
+              See my Endstar credential
             </a>
           </article>
+
           <article class="preview-card">
-            <h3>Education &amp; Skills</h3>
+            <h3>The Hideout Trifold Menu</h3>
             <p>
-              See my academic background and the creative, technical, and
-              professional skills I continue to build.
+              I designed a trifold menu for The Hideout Bar + Kitchen in Adobe
+              InDesign. I used mountains and pine trees to give the menu a look
+              that fit the restaurant.
             </p>
-            <a class="card-link" href="education-skills.html">
-              View Education &amp; Skills
-              <span aria-hidden="true">&rarr;</span>
-            </a>
+            <details>
+              <summary class="card-link">See how I designed the menu</summary>
+              <ul>
+                <li>Organized the content across six panels</li>
+                <li>Used tabs to line up the prices</li>
+                <li>Created mountain and pine tree illustrations</li>
+              </ul>
+            </details>
           </article>
+
           <article class="preview-card">
-            <h3>Projects &amp; Achievements</h3>
+            <h3>Interactive Resume</h3>
             <p>
-              Explore selected class and personal projects along with
-              professional credentials and achievements.
+              I built this site with HTML and CSS for CIS 300. It brings my work
+              experience, coursework, and creative projects together.
             </p>
-            <a class="card-link" href="projects-achievements.html">
-              View Projects &amp; Achievements
-              <span aria-hidden="true">&rarr;</span>
+            <a
+              class="card-link"
+              href="https://github.com/gbrysonf-Bryson/garinbryson.github.io"
+            >
+              View the GitHub repository
             </a>
           </article>
         </div>
       </section>
 
-      <!-- Homepage Contact Invitation -->
-      <section
-        class="contact-invitation"
-        aria-labelledby="contact-invitation-title"
-      >
-        <div class="contact-copy">
-          <p class="section-label">Let’s Connect</p>
-          <h2 id="contact-invitation-title">
-            Interested in connecting or learning more?
-          </h2>
-          <p>
-            Visit my contact page to learn how to reach me about employment,
-            creative projects, collaboration, or professional networking.
-          </p>
+      <section class="education-section" aria-labelledby="achievements-title">
+        <div class="section-heading">
+          <h2 id="achievements-title">Achievements</h2>
         </div>
-        <a class="contact-button" href="contact.html">Contact Me</a>
+        <div class="education-grid">
+          <article class="education-card">
+            <h3>Graduated with Honors</h3>
+            <p>I graduated with honors from ASU Prep Digital in 2023.</p>
+            <a class="card-link" href="education-skills.html">
+              View my education and skills
+            </a>
+          </article>
+
+          <article class="education-card" id="endstar-credential">
+            <h3>Endstar Game Developer</h3>
+            <p>
+              I earned this microcredential for my level design and playtesting
+              work on our AME 394 team game.
+            </p>
+            <p>Endless Games and Learning Lab at ASU &middot; May 15, 2026</p>
+          </article>
+        </div>
       </section>
     </main>
 
-    <!-- Site Footer -->
     <footer class="site-footer">
       <p>&copy; 2026 Garin Bryson</p>
     </footer>

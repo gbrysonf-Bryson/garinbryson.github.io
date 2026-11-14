@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Connect with Garin Bryson about internships, freelance work, and creative media opportunities."
+    />
+    <title>Garin Bryson | Contact</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true">GB</span>
+        <div class="brand-text">
+          <h1 class="brand-name">Garin Bryson</h1>
+          <p class="brand-subtitle">
+            Media Arts and Sciences Student
+            <span aria-hidden="true">&bull;</span>
+            Interactive Resume
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li>
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li>
+          <a class="nav-link" href="experience.html">Experience</a>
+        </li>
+        <li>
+          <a class="nav-link" href="education-skills.html">
+            Education &amp; Skills
+          </a>
+        </li>
+        <li>
+          <a class="nav-link" href="projects-achievements.html">
+            Projects &amp; Achievements
+          </a>
+        </li>
+        <li>
+          <a
+            class="nav-link current-page"
+            href="contact.html"
+            aria-current="page"
+          >
+            Contact
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="main-content">
+      <section class="contact-invitation" aria-labelledby="reach-me-title">
+        <div class="contact-copy">
+          <h2 id="reach-me-title">Ways to reach me</h2>
+          <p>Email me at <strong>brysonbear2005@gmail.com</strong>.</p>
+          <p>
+            <a class="card-link" href="https://github.com/gbrysonf-Bryson">
+              View my GitHub profile
+            </a>
+          </p>
+        </div>
+      </section>
+      <section class="education-section" aria-labelledby="message-title">
+        <div class="section-heading">
+          <h2 id="message-title">Contact Form</h2>
+          <p class="section-introduction" id="form-note">
+            This form checks your entries in the browser. To send a message, use
+            the email address above.
+          </p>
+        </div>
+
+        <form
+          class="education-card contact-form"
+          id="contact-form"
+          action="#"
+          method="post"
+          aria-describedby="form-note"
+        >
+          <label for="full-name">Full Name (required)</label>
+          <input
+            id="full-name"
+            name="full-name"
+            type="text"
+            autocomplete="name"
+            required
+          />
+
+          <label for="email-address">Email Address (required)</label>
+          <input
+            id="email-address"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+          />
+
+          <label for="organization">Company or Organization (optional)</label>
+          <input
+            id="organization"
+            name="organization"
+            type="text"
+            autocomplete="organization"
+          />
+
+          <fieldset>
+            <legend>What are you reaching out about? (optional)</legend>
+            <label
+              ><input type="checkbox" name="interest" value="internship" />
+              Internship</label
+            >
+            <label
+              ><input type="checkbox" name="interest" value="freelance" />
+              Freelance</label
+            >
+            <label
+              ><input type="checkbox" name="interest" value="networking" />
+              Networking</label
+            >
+          </fieldset>
+
+          <label for="message">Message (required)</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button
+            class="contact-button"
+            id="check-message"
+            type="submit"
+            disabled
+          >
+            Check message
+          </button>
+          <p id="contact-status" role="status"></p>
+          <noscript><p>Enable JavaScript to check your entries.</p></noscript>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Garin Bryson</p>
+    </footer>
+
+    <script>
+      const contactForm = document.getElementById("contact-form");
+      const checkButton = document.getElementById("check-message");
+      const contactStatus = document.getElementById("contact-status");
+
+      contactForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        contactStatus.textContent = "Your entries passed the form check.";
+      });
+
+      checkButton.disabled = false;
+    </script>
+  </body>
+</html>
